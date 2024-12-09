@@ -1,11 +1,15 @@
 
 
-qa = RetrievalQA.from_chain_type(llm = llm,
-                                 chain_type = "stuff",
-                                 retriever = docsearch.as_retriever(
-                                    search_type="mmr",
-                                    search_kwargs={'k':3, 'fetch_k': 10}),
-                                 return_source_documents = True)
+# qa = RetrievalQA.from_chain_type(llm = llm,
+#                                  chain_type = "stuff",
+#                                  retriever = docsearch.as_retriever(
+#                                     search_type="mmr",
+#                                     search_kwargs={'k':3, 'fetch_k': 10}),
+#                                  return_source_documents = True)
 
-query = "체크리스트로 만들어줘"
-result = qa(query)
+# query = "체크리스트로 만들어줘"
+# result = qa(query)
+
+test = [1,2,3,4,5]
+
+print(test[1:-1])
