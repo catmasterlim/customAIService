@@ -166,3 +166,7 @@ cython_debug/
 models/
 
 .DS_Store
+
+
+# langgraph-server
+langchain/langgraph-server/
