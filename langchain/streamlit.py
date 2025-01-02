@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# pip install faiss-cpu langchain streamlit streamlit-chat pypdf
+# pip install faiss-cpu langchain streamlit streamlit-chat pypdf langchain_ollama langchain-community
 
 
 import streamlit as st
