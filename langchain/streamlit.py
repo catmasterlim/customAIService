@@ -10,7 +10,8 @@ from langchain.embeddings.ollama import OllamaEmbeddings
 from langchain.chains import ConversationalRetrievalChain
 from langchain.vectorstores import FAISS
 import tempfile
-from langchain.document_loaders import PyPDFLoader
+# from langchain.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyPDFLoader
 
 import os
 from langchain_core.prompts import ChatPromptTemplate
@@ -54,7 +55,7 @@ if uploaded_file :
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["안녕하세요! " + uploaded_file.name + "에 관해 질문주세요."]
+        st.session_state['generated'] = ["안녕하세요! '" + uploaded_file.name + "'에 관해 질문주세요."]
 
     if 'past' not in st.session_state:
         st.session_state['past'] = ["안녕하세요!"]
